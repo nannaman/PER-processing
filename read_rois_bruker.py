@@ -21,7 +21,7 @@ from read_roi import read_roi_zip
 date = '20210709'
 video_number = 1  #aka fly number
 roi_number = 'PER'
-roi_path = "/oak/stanford/groups/trc/data/Ashley2/bruker videos/" + str(date) + 'analysis/' + str(roi_number)
+roi_path = "/oak/stanford/groups/trc/data/Ashley2/bruker videos/" + str(date) + '/analysis/' + str(roi_number)
 jpeg_path = "/oak/stanford/groups/trc/data/Ashley2/bruker videos/" + str(date) + "/analysis/fly" + str(video_number) 
 save_file_name = "Results_video_" + str(video_number) + "_python.csv"
 save_path = "/oak/stanford/groups/trc/data/Ashley2/bruker videos/" + str(date) + "/analysis/" 
