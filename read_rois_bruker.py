@@ -18,7 +18,7 @@ from read_roi import read_roi_zip
 
 ## Stuff to change  ##
 
-date = '20210723'
+date = '20210709'
 video_number = 1  #aka fly number
 roi_number = 'PER'
 roi_path = "/oak/stanford/groups/trc/data/Ashley2/bruker videos/" + str(date) + 'analysis/' + str(roi_number)
