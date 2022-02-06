@@ -12,8 +12,8 @@
 ml system
 ml ffmpeg
 
-srun mkdir '/oak/stanford/groups/trc/data/Ashley2/bruker videos/20210709/analysis/fly1'
-srun mkdir '/oak/stanford/groups/trc/data/Ashley2/bruker videos/20210709/analysis/fly2'
+##srun mkdir '/oak/stanford/groups/trc/data/Ashley2/bruker videos/20210709/analysis/fly1'
+##srun mkdir '/oak/stanford/groups/trc/data/Ashley2/bruker videos/20210709/analysis/fly2'
 
 ffmpeg -i '/oak/stanford/groups/trc/data/Ashley2/bruker videos/20210709/fly1/13_37_46MJPG-0000.avi' '/oak/stanford/groups/trc/data/Ashley2/bruker videos/20210709/analysis/fly1/V01frame_%07d.jpg'
 ffmpeg -i '/oak/stanford/groups/trc/data/Ashley2/bruker videos/20210709/fly2/15_56_54MJPG-0000.avi' '/oak/stanford/groups/trc/data/Ashley2/bruker videos/20210709/analysis/fly2/V02frame_%07d.jpg'
