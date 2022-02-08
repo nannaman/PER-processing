@@ -15,4 +15,4 @@ ml ffmpeg
 ml python/3.6.1
 
 date
-python3 -u /home/users/asmart/projects/PER-processing/ffmpeg_Niyathi.py
+python3 -u /home/users/nannaman/projects/PER-processing/ffmpeg_Niyathi.py
