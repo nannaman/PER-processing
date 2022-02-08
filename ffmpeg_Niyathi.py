@@ -26,12 +26,14 @@ def main():
   #run ffmpeg code
   final_jpeg_path_v1 = os.path.join(video_1_jpeg_path, 'V01frame_%07d.jpg')
   final_vid_1_path = os.path.join(video_1_path, video_1_name)
-  subprocess.call(cmd.split(f'ffmpeg -i {final_vid_1_path} {final_jpeg_path_v1}'))
+  cmd = f'ffmpeg -i {final_vid_1_path} {final_jpeg_path_v1}'
+  subprocess.call(cmd.split(" "))
   
   if video_2_name is not None:
     final_jpeg_path_v2 = os.path.join(video_2_jpeg_path, 'V02frame_%07d.jpg')
     final_vid_2_path = os.path.join(video_2_path, video_2_name)
-    subprocess.call(cmd.split(f'ffmpeg -i {final_vid_2_path} {final_jpeg_path_v2}'))
+    cmd = f'ffmpeg -i {final_vid_2_path} {final_jpeg_path_v2}'
+    subprocess.call(cmd.split(" "))
   
   
   
