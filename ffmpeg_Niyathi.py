@@ -1,6 +1,8 @@
 ## this should make new directories and run ffmpeg
 
 import os
+import subprocess
+import sys
 
 #variables to change
 date = '1-3-22'    #date folder
