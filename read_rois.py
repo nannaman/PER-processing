@@ -19,28 +19,35 @@ from read_roi import read_roi_file
 from read_roi import read_roi_zip
 
 
-#### change this ####
 
+##  NOTE:  before running this code make sure there is an ROI folder and it is UNZIPPED!
+
+
+#### change this ####
 date = '20211018'  #name of folder the files are in 
 video_number = 1   # video number using
-roi_number = 1    
+roi_number = 1 #make sure rois are saved with this filename format "RoiSet_vid1"
+path_to_date = '/oak/stanford/groups/trc/data/Niyathi/' ##end with / and just before date folder (shouldn't need to change)
+   
+###   ###
 
-roi_path = "/oak/stanford/groups/trc/data/Ashley2/PER/" + str(date) + 'analysis/RoiSet_vid' + str(roi_number) + "/"
+roi_path = str(path_to_date) + str(date) + 'analysis/RoiSet_vid' + str(roi_number) + "/"
 rois = os.listdir(roi_path)
 
-jpeg_path = "/oak/stanford/groups/trc/data/Ashley2/PER/" + str(date) + "/analysis/Video_" + str(video_number) + "/"
+jpeg_path = str(path_to_date) + str(date) + "/analysis/Video_" + str(video_number) + "/"
 jpeg_file_names = os.listdir(jpeg_path)
+
+# location to save csv files 
+save_path = str(path_to_date) + str(date) + "/analysis/" 
 
 #name of file when completed (keep this the same)
 save_file_name = "Results_video_" + str(video_number) + "_python.csv"
-
-# location to save files 
-save_path = "/oak/stanford/groups/trc/data/Ashley2/PER/" + str(date) + "/analysis/" 
 
 if os.path.exists(save_path):
     print('save path folder there')
 else:
     os.makedirs(save_path)
+    print('save path folder created')
     
     
     
