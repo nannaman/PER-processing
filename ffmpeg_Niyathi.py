@@ -8,7 +8,7 @@ video_1_name = 'Basler acA2440-35um (22467982)_20220103_192741565.m4v'     #incl
 video_2_name = None  #change if have two videos for the same day
 
 #check to make sure this is right, but should work as long as your file structure doesn't change
-video_1_path = '/oak/stanford/groups/trc/data/Niyathi/' + str(date) +'/' + str(video_1_name)   #path to video 1, should end in video name
+video_1_path = '/oak/stanford/groups/trc/data/Niyathi/' + str(date) +'/'   #path to video 1, should end in /
 video_2_path = None #change if have two videos
 
 #should not need to change these as long as the video_1_path is correct
@@ -23,11 +23,13 @@ def main():
   
   #run ffmpeg code
   final_jpeg_path_v1 = os.path.join(video_1_jpeg_path, 'V01frame_%07d.jpg')
-  subprocess.call(cmd.split(f'ffmpeg -i {video_1_path} {final_jpeg_path_v1}'))
+  final_vid_1_path = os.path.join(video_1_path, video_1_name)
+  subprocess.call(cmd.split(f'ffmpeg -i {final_vid_1_path} {final_jpeg_path_v1}'))
   
   if video_2_name is not None:
     final_jpeg_path_v2 = os.path.join(video_2_jpeg_path, 'V02frame_%07d.jpg')
-    subprocess.call(cmd.split(f'ffmpeg -i {video_2_path} {final_jpeg_path_v2}'))
+    final_vid_2_path = os.path.join(video_2_path, video_2_name)
+    subprocess.call(cmd.split(f'ffmpeg -i {final_vid_2_path} {final_jpeg_path_v2}'))
   
   
   
