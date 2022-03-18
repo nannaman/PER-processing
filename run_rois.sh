@@ -11,4 +11,4 @@
 ml python/3.6.1
 
 date
-python3 -u /home/users/Niyathi/projects/PER-processing/read_rois.py
+python3 -u /home/users/nannaman/projects/PER-processing/read_rois.py
