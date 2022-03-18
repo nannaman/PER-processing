@@ -31,9 +31,9 @@ path_to_date = '/oak/stanford/groups/trc/data/Niyathi/' ##end with / and just be
    
 ###   ###
 
-roi_path = str(path_to_date) + str(date) + 'analysis/RoiSet_vid' + str(roi_number) + "/"
+roi_path = str(path_to_date) + str(date) + '/analysis/RoiSet_vid' + str(roi_number) + "/"
 rois = os.listdir(roi_path)
-
+print(roi_path)
 jpeg_path = str(path_to_date) + str(date) + "/analysis/Video_" + str(video_number) + "/"
 jpeg_file_names = os.listdir(jpeg_path)
 
@@ -48,8 +48,7 @@ if os.path.exists(save_path):
 else:
     os.makedirs(save_path)
     print('save path folder created')
-    
-    
+        
     
 ######################################################
     
