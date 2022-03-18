@@ -17,7 +17,7 @@ import pickle as pickle
 
 from read_roi import read_roi_file
 from read_roi import read_roi_zip
-
+print("everything imported")
 
 
 ##  NOTE:  before running this code make sure there is an ROI folder and it is UNZIPPED!
