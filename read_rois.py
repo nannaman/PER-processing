@@ -17,13 +17,14 @@ import pickle as pickle
 
 from read_roi import read_roi_file
 from read_roi import read_roi_zip
-print("everything imported")
+
 
 
 ##  NOTE:  before running this code make sure there is an ROI folder and it is UNZIPPED!
 
 
 #### change this ####
+print('got this far')
 date = '1-7-22'  #name of folder the files are in 
 video_number = 1   # video number using
 roi_number = 1 #make sure rois are saved with this filename format "RoiSet_vid1"
@@ -33,7 +34,7 @@ path_to_date = '/oak/stanford/groups/trc/data/Niyathi/' ##end with / and just be
 
 roi_path = str(path_to_date) + str(date) + '/analysis/RoiSet_vid' + str(roi_number) + "/"
 rois = os.listdir(roi_path)
-print(roi_path)
+
 jpeg_path = str(path_to_date) + str(date) + "/analysis/Video_" + str(video_number) + "/"
 jpeg_file_names = os.listdir(jpeg_path)
 
@@ -41,14 +42,15 @@ jpeg_file_names = os.listdir(jpeg_path)
 save_path = str(path_to_date) + str(date) + "/analysis/" 
 
 #name of file when completed (keep this the same)
-save_file_name = "Results_video_" + str(video_number) + "_python.csv"
+save_file_name = "Results_video_" + str(video_number) + "python.csv"
 
 if os.path.exists(save_path):
     print('save path folder there')
 else:
     os.makedirs(save_path)
     print('save path folder created')
-        
+    
+    
     
 ######################################################
     
@@ -141,7 +143,6 @@ for roi_index in range(len(all_poly_x)):
 #and save the average intensity for each frame
 all_avg_intensity = []
 for jpeg_index in range(len(jpeg_file_names)):
-    clear_output(wait = True)
     #open each frame to get instensities
     jpeg_file_path = os.path.join(jpeg_path, jpeg_file_names[jpeg_index])
     frame = cv2.imread(jpeg_file_path, 0) #0 to load in grayscale
