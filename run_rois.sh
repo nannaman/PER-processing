@@ -8,7 +8,7 @@
 #SBATCH --open-mode=append
 #SBATCH --mail-type=ALL
 
-ml python/3.8.12
+ml python/3.6.1
 
 date
 python3 -u /home/users/nannaman/projects/PER-processing/read_rois.py
