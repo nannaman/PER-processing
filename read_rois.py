@@ -42,7 +42,7 @@ jpeg_file_names = os.listdir(jpeg_path)
 save_path = str(path_to_date) + str(date) + "/analysis/" 
 
 #name of file when completed (keep this the same)
-save_file_name = "Results_video_" + str(video_number) + "python.csv"
+save_file_name = "Results_video_" + str(video_number) + "_python.csv"
 
 if os.path.exists(save_path):
     print('save path folder there')
