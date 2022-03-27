@@ -3,8 +3,8 @@
 import math
 import csv 
 import numpy as np
-from matplotlib import pyplot as plt
-from matplotlib import path
+
+
 import scipy as scipy
 import scipy.io
 import cv2
