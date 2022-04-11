@@ -6,7 +6,7 @@ import sys
 
 #variables to change
 date = '3-21-22'    #date folder
-video_1_name = "Basler acA2440-35um (22467982)_20220321_152143333.m4v"     #include .avi or .m4v
+video_1_name = "Basler acA2440-35um (22467982)_20220321_224240820.m4v"     #include .avi or .m4v
 video_2_name = None  #change if have two videos for the same day
 
 #check to make sure this is right, but should work as long as your file structure doesn't change
