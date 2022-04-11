@@ -5,7 +5,7 @@ import subprocess
 import sys
 
 #variables to change
-date = '11-5-22'    #date folder
+date = '11-5-21'    #date folder
 video_1_name = "Basler acA2440-35um (22467982)_20211105_201447598.m4v"     #include .avi or .m4v
 video_2_name = None  #change if have two videos for the same day
 
