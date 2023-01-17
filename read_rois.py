@@ -28,7 +28,7 @@ print('got this far')
 date = '12-10-22'  #name of folder the files are in 
 video_number = 1   # video number using
 roi_number = 1 #make sure rois are saved with this filename format "RoiSet_vid1"
-path_to_date = '/oak/stanford/groups/trc/data/niyathi/timing/tim[01]data' ##end with / and just before date folder (shouldn't need to change)
+path_to_date = '/oak/stanford/groups/trc/data/niyathi/timing/tim[01]data/' ##end with / and just before date folder (shouldn't need to change)
    
 ###   ###
 
