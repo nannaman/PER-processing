@@ -3,7 +3,7 @@
 import math
 import csv 
 import numpy as np
-import path 
+import matplotlib.path as path
 
 import scipy as scipy
 import scipy.io
