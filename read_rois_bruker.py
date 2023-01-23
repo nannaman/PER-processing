@@ -18,12 +18,12 @@ from read_roi import read_roi_zip
 
 ## Stuff to change  ##
 
-dates = ['20210702', '20210607', '20210714', '20210716', '20210719']
+dates = ['12-2-22', '12-4-22', '12-6-22', '12-8-22', '12-10-22', '12-14-22','12-16-22', '12-30-22', 1-2-23]
 
 def main():
     for date in dates:
         print(f"RUNNING CURRENT DATE: {date}")
-        roi_path = "/oak/stanford/groups/trc/data/Ashley2/bruker videos/" + str(date) + '/analysis/' 
+        roi_path = "/oak/stanford/groups/trc/data/niyathi/timing/tim[01]data/" + str(date) + '/analysis/' 
         
         #look for results files and roi files
         fly_number_done = []
