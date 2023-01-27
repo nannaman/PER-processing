@@ -37,6 +37,7 @@ def main():
                 print(f"APPENDING ROI LIST: {file}")
 
         for fly_dir in os.listdir(roi_path):
+            print(f"CHECKING DIRS: {roi_path}")
             #this will clear out if results are already done for that fly and if it is a PER (roi)
             if not any(str(number) in fly_dir for number in fly_number_done) and 'fly' in fly_dir and 'PER' not in fly_dir: #to get fly folders without getting rois
                 print('fly dir is ok:', fly_dir)
@@ -55,6 +56,7 @@ def main():
                 #determine ROI name
                 #there may be more numbers because of date => look only at part of string after "fly" could be fly2_PER or fly_2.roi etc
                 for roi_file in roi_list:
+                    print(f"GETTING ROI NAMES: {roi_list}")
                     post_fly_string = find_fly_string(roi_file)
                     if dir_number in post_fly_string:
                         roi_name = roi_file
