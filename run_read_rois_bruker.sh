@@ -9,6 +9,6 @@
 #SBATCH --mail-type=ALL
 
 python/3.6.1
-ml py-numpy/1.15_py36
+ml py-numpy/1.19.5_py36
 date
 python3 -u /home/users/nannaman/projects/PER-processing/read_rois_bruker.py
