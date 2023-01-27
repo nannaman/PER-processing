@@ -18,7 +18,7 @@ from read_roi import read_roi_zip
 
 ## Stuff to change  ##
 
-dates = ['12-2-22', '12-4-22', '12-6-22', '12-8-22', '12-10-22', '12-14-22','12-16-22', '12-30-22', '1-2-23']
+dates = ['12-2-22', '12-4-22', '12-6-22', '12-8-22', '12-10-22', '12-12-22','12-14-22','12-16-22', '12-30-22', '1-2-23']
 
 def main():
     for date in dates:
@@ -34,6 +34,7 @@ def main():
                 fly_number_done.append(fly_number)
             elif 'roi' in file:
                 roi_list.append(file)
+                print(f"APPENDING ROI LIST: {file}")
 
         for fly_dir in os.listdir(roi_path):
             #this will clear out if results are already done for that fly and if it is a PER (roi)
