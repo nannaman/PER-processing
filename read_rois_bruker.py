@@ -62,7 +62,7 @@ def main():
                         continue             
                 print('roi_name:', roi_name)
                 save_file_name = "Results_video_" + str(fly_dir) + "_python.csv" #so each fly is saved seperately
-                save_path = "/oak/stanford/groups/trc/data/Ashley2/bruker videos/" + str(date) + "/analysis/" 
+                save_path = "/oak/stanford/groups/trc/data/niyathi/timing/tim[01]data/" + str(date) + "/analysis/" 
                 make_dirs(save_path)
 
                 if os.path.exists(jpeg_path):
