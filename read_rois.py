@@ -25,12 +25,12 @@ from read_roi import read_roi_zip
 
 #### change this ####
 #print('got this far')
-date_list = ['1-12-22', '1-14-22']
+date_list = ['12-2-22', '12-4-22', '12-6-22', '12-10-22','12-12-22', '12-14-22', '12-16-22', '12-30-22', '1-2-23']
 for date in date_list:
    #date = '1-17-22'  #name of folder the files are in 
    video_number = 1   # video number using
    roi_number = 1 #make sure rois are saved with this filename format "RoiSet_vid1"
-   path_to_date = '/oak/stanford/groups/trc/data/Niyathi/' ##end with / and just before date folder (shouldn't need to change)
+   path_to_date = '/oak/stanford/groups/trc/data/niyathi/timing/tim[01]data/' ##end with / and just before date folder (shouldn't need to change)
    
    ###   ###
 
