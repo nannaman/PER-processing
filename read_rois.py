@@ -37,12 +37,12 @@ for date in date_list:
    roi_path = str(path_to_date) + str(date) + '/analysis/RoiSet_vid' + str(roi_number) + "/"
    rois = os.listdir(roi_path)
 
-   jpeg_path = str(path_to_date) + str(date) + "/analysis/Video_" + str(video_number) + "/"
-   if os.path.exists(jpeg_path):
-      jpeg_file_names = os.listdir(jpeg_path)
-      print('unsorted', jpeg_file_names[0:5])
-      sorted_jpeg_file_names = sorted(jpeg_file_names)
-      print('sorted', sorted_jpeg_file_names[0:5])
+   jpg_path = str(path_to_date) + str(date) + "/analysis/Video_" + str(video_number) + "/"
+   if os.path.exists(jpg_path):
+      jpg_file_names = os.listdir(jpg_path)
+      print('unsorted', jpg_file_names[0:5])
+      sorted_jpg_file_names = sorted(jpg_file_names)
+      print('sorted', sorted_jpg_file_names[0:5])
 
       # location to save csv files 
       save_path = str(path_to_date) + str(date) + "/analysis/" 
@@ -116,10 +116,10 @@ for date in date_list:
 
       #get some frames to calc h, w
       all_frames = []
-      for jpeg in sorted_jpeg_file_names[0:10]:
-          if '.jpg' in jpeg:
-             jpeg_file_path = os.path.join(jpeg_path, jpeg)
-             frame = cv2.imread(jpeg_file_path, 0) #0 to load in grayscale
+      for jpg in sorted_jpg_file_names[0:10]:
+          if '.jpg' in jpg:
+             jpg_file_path = os.path.join(jpg_path, jpg)
+             frame = cv2.imread(jpg_file_path, 0) #0 to load in grayscale
              all_frames.append(frame)
       h,w = np.shape(all_frames[0])  #add c if it is not in grayscale
 
@@ -149,11 +149,11 @@ for date in date_list:
       #open each frame-find the itnensity in the ROI 
       #and save the average intensity for each frame
       all_avg_intensity = []
-      for jpeg_index in range(len(sorted_jpeg_file_names)):
-          if '.jpg' in sorted_jpeg_file_names[jpeg_index]:
+      for jpg_index in range(len(sorted_jpg_file_names)):
+          if '.jpg' in sorted_jpg_file_names[jpg_index]:
              #open each frame to get instensities
-             jpeg_file_path = os.path.join(jpeg_path, sorted_jpeg_file_names[jpeg_index])
-             frame = cv2.imread(jpeg_file_path, 0) #0 to load in grayscale
+             jpg_file_path = os.path.join(jpg_path, sorted_jpg_file_names[jpg_index])
+             frame = cv2.imread(jpg_file_path, 0) #0 to load in grayscale
              if frame is not None:
                  #frame = cv2.imread(jpeg_file_path) 
                  #flatten image to use mask on it
@@ -179,5 +179,5 @@ for date in date_list:
               writer.writerow(all_avg_intensity[frame_i])
       print(str(date) + ' ----------- COMPLETED AND SAVED!') 
    else:
-        print(f'{jpeg_path} does not exist')
+        print(f'{jpg_path} does not exist')
         continue
