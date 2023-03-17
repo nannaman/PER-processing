@@ -5,7 +5,7 @@
 #SBATCH --partition=trc
 ##two should comemnt out SBATCH --mem 260G
 #SBATCH --cpus-per-task=2
-#SBATCH --output=./logs/mainlog.out
+#SBATCH --output=./roi-logs/mainlog.out
 #SBATCH --open-mode=append
 #SBATCH --mail-type=ALL
 
