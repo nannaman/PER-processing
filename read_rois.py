@@ -27,6 +27,7 @@ from read_roi import read_roi_zip
 #print('got this far')
 date_list = ['3-1-23', '3-2-23', '3-5-23', '3-9-23','3-13-23']
 for date in date_list:
+   print(date)
    #date = '1-17-22'  #name of folder the files are in 
    video_number = 1   # video number using
    roi_number = 1 #make sure rois are saved with this filename format "RoiSet_vid1"
