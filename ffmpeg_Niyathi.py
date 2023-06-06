@@ -10,7 +10,7 @@ video_1_name = "Basler acA2440-35um (22467982)_20230518_151359075.mp4"     #incl
 video_2_name = None  #change if have two videos for the same day
 
 #check to make sure this is right, but should work as long as your file structure doesn't change
-video_1_path = '/oak/stanford/groups/trc/data/niyathi/timing/cyc[01]data/' + str(date) +'/'   #path to video 1, should end in /
+video_1_path = '/oak/stanford/groups/trc/data/niyathi/timing/rover-sitterdata/rover_fed' + str(date) +'/'   #path to video 1, should end in /
 video_2_path = None #'/oak/stanford/groups/trc/data/niyathi/timing/tim[01]data/' + str(date) +'/' #change if have two videos
 
 #should not need to change these as long as the video_1_path is correct
