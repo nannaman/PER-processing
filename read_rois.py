@@ -25,7 +25,7 @@ from read_roi import read_roi_zip
 
 #### change this ####
 #print('got this far')
-date_list = ['5-26-23','5-27-23']
+date_list = ['6-4-23','6-5-23']
 for date in date_list:
    print(date)
    #date = '1-17-22'  #name of folder the files are in 
